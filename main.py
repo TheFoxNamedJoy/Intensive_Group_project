@@ -1,4 +1,4 @@
-import test_math, test_inform, test_geography
+import test_math, test_inform, test_geography, questions_school, test_school
 
 print('\nМы рады приветствовать вас в нашем приложении для проверки знаний по школьным предметам!\n')
 user_name = input("Как вас зовут?\n")
