@@ -16,11 +16,11 @@ while id_subj != '0':
     elif id_subj == '3':
         user_points += test_geography.test_geography()
     elif id_subj == '4':
-        physics.test_physics()
+        user_points +=physics.test_physics()
     elif id_subj == '5':
-        test_chem.test_chemistry()
+        user_points +=test_chem.test_chemistry()
     elif id_subj == '6':
-        test_bio.test_biology()
+        user_points +=test_bio.test_biology()
     elif id_subj == '7':
         local_points = test_school.test_school(questions_school.questions_russian)
         normal_points = test_school.normal_school(local_points, questions_school.questions_russian)
