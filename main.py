@@ -1,4 +1,4 @@
-import test_math, test_inform, test_geography, questions_school, test_school,test_bio, test_chem
+import test_math, test_inform, test_geography, questions_school, test_school,test_bio, test_chem, physics
 
 print('\nМы рады приветствовать вас в нашем приложении для проверки знаний по школьным предметам!\n')
 user_name = input("Как вас зовут?\n")
@@ -16,7 +16,7 @@ while id_subj != '0':
     elif id_subj == '3':
         user_points += test_geography.test_geography()
     elif id_subj == '4':
-        test_math.test_math()
+        physics.test_physics()
     elif id_subj == '5':
         test_chem.test_chemistry()
     elif id_subj == '6':
