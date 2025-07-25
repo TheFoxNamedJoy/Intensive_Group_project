@@ -7,7 +7,7 @@ def check_answer(q):
     parce = q.find('#')
     question = q[0:parce]
     right_a = q[parce+1]
-    answer = input(question+'\nВведите ответ (только 1 правильный вариант):')
+    answer = input(question+'\nВведите ответ (только 1 правильный вариант):').lower()
     if right_a in answer:
         return 1
     else:
@@ -19,6 +19,7 @@ def test_biology():
     score += check_answer(bio_question2)
     score += check_answer(bio_question3)
     score += check_answer(bio_question4)
+    print('Вы набрали', score, 'баллов из 4')
     if score == 0:
         print('\nВы провалили тест( Не быть вам биологом')
     elif score == 4:
