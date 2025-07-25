@@ -10,7 +10,7 @@ def check_answer(q):
     question = q[0:parce]
     right_a = q[parce+1]
     answer = input(question+'\nВведите ответ (только 1 правильный вариант):').lower()
-    if right_a in answer:
+    if right_a == answer:
         return 1
     else:
         return 0
